@@ -85,7 +85,7 @@ def time_based_weighted_average(dataframe, w1=24, w2=22, w3=20, w4=18, w5=16):
            dataframe.loc[(dataframe["day_diff"] > dataframe["day_diff"].quantile(0.8)), "overall"].mean() * w5 / 100
 
 
-time_based_weighted_average(df, w1=16, w2=18, w3=20, w4=22, w5=24)  # 4.574787
+time_based_weighted_average(df)  # 4.600026
 
 
 # Let's specify 20 reviews for the product to be displayed on the product detail page
